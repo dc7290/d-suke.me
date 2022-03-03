@@ -1,0 +1,46 @@
+.RichEdit {
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+
+  a {
+    @apply break-all underline;
+  }
+
+  blockquote {
+    @apply border-l-4 border-gray-300 pl-4 text-gray-500;
+  }
+
+  ul {
+    li {
+      @apply relative;
+
+      padding-left: 2rem;
+
+      &::before {
+        @apply absolute top-0 left-2;
+
+        content: '・';
+      }
+    }
+  }
+  ol {
+    counter-reset: num;
+
+    li {
+      @apply relative;
+
+      padding-left: 2.75rem;
+
+      &::before {
+        @apply absolute top-0 left-0 font-english;
+
+        counter-increment: num;
+        content: '0' counter(num) '.';
+      }
+    }
+  }
+}
