@@ -4,9 +4,9 @@ type Props = DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageEle
   alt: string
 }
 
-const Img = (props: Props) => {
+const Img = ({ decoding = 'async', ...props }: Props) => {
   // eslint-disable-next-line jsx-a11y/alt-text
-  return <img {...props} decoding="async" />
+  return <img {...props} decoding={decoding} />
 }
 
 export default Img

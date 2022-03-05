@@ -3,6 +3,9 @@ export const pagesPath = {
     $url: (url?: { hash?: string }) => ({ pathname: '/development' as const, hash: url?.hash }),
   },
   posts: {
+    _postId: (postId: string | number) => ({
+      $url: (url?: { hash?: string }) => ({ pathname: '/posts/[postId]' as const, query: { postId }, hash: url?.hash }),
+    }),
     $url: (url?: { hash?: string }) => ({ pathname: '/posts' as const, hash: url?.hash }),
   },
   profile: {
