@@ -9,7 +9,9 @@ export type Props = {
 const Layout = ({ children }: Props) => (
   <>
     <Header />
-    <main className="pt-16 lg:pt-24">{children}</main>
+    <main className="container mx-auto px-4 pt-16 pb-16 sm:px-6 lg:max-w-5xl lg:px-8 lg:pt-24 lg:pb-24">
+      {children}
+    </main>
     {/* <Footer /> */}
   </>
 )

@@ -2,6 +2,7 @@ import type { GetStaticProps, NextLayoutPage } from 'next'
 import Parser from 'rss-parser'
 
 import { ExternalAnchor } from '~/src/components/base/atoms/ExternalAnchor'
+import { Meta } from '~/src/components/base/molecules/Meta'
 import { ZennAnchorProps } from '~/src/components/domain/zenn/ZennAnchor'
 import { ZennAnchorList } from '~/src/components/domain/zenn/ZennAnchorList'
 
@@ -23,7 +24,8 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 
 const IndexPage: NextLayoutPage<Props> = ({ zennColumns }) => {
   return (
-    <div className="container mx-auto px-4 pb-16 sm:px-6 lg:px-8 lg:pb-24">
+    <>
+      <Meta />
       <section className="mt-16 sm:mt-24">
         <h2 className="flex items-center space-x-4 text-2xl">Zenn</h2>
         <ZennAnchorList list={zennColumns} className="mt-5" />
@@ -31,7 +33,7 @@ const IndexPage: NextLayoutPage<Props> = ({ zennColumns }) => {
           もっと見る
         </ExternalAnchor>
       </section>
-    </div>
+    </>
   )
 }
 

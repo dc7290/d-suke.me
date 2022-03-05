@@ -24,9 +24,9 @@ const Header = () => {
           メインメニュー
         </h2>
         <Link href={pagesPath.$url()}>
-          <a className="w-10 rounded-full md:w-14 lg:w-16 lg:transition-colors lg:duration-200 lg:hover:bg-white/20">
+          <a className="-ml-5 w-28 rounded-3xl px-5 py-3 lg:w-32 lg:transition-colors lg:duration-200 lg:hover:bg-white/10">
             <span className="sr-only">Top</span>
-            <Img className="w-full" src={require('~/src/images/logo.svg')} width={40} height={40} alt="ロゴ" />
+            <Img className="w-full" src={require('~/src/images/logo.svg')} width={308} height={51} alt="ロゴ" />
           </a>
         </Link>
         <div className="hidden space-x-2 lg:flex">

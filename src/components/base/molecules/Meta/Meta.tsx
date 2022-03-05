@@ -12,16 +12,10 @@ type Props = {
 const Meta = ({ title, description, ogImage, canonical, noindex = false }: Props) => {
   return (
     <NextHeadSeo
-      title={`${title ? `${title} | ` : ''}`}
-      description={description ?? ''}
-      customLinkTags={[
-        {
-          rel: 'icon',
-          href: `${process.env.NEXT_PUBLIC_BASE_PATH}/favicon.ico`,
-        },
-      ]}
+      title={`${title ? `${title} | でぃーすけ.me` : 'でぃーすけ.me'}`}
+      description={description ?? 'でぃーすけの情報をまとめるサイト'}
       og={{
-        image: ogImage ?? `${process.env.NEXT_PUBLIC_SITE_URL}${process.env.NEXT_PUBLIC_BASE_PATH}/og.png`,
+        image: ogImage ?? 'https://d-suke.me/og.png',
       }}
       twitter={{
         card: 'summary_large_image',
