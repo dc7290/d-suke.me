@@ -47,7 +47,7 @@ const Header = () => {
       <Popover as={Fragment}>
         {({ open }) => (
           <>
-            <Popover.Button className="absolute top-3 right-4 flex h-10 w-10 items-center justify-center rounded-md p-2 text-white lg:hidden">
+            <Popover.Button className="absolute top-3 right-4 flex h-10 w-10 items-center justify-center p-2 text-white lg:hidden">
               <span className="sr-only">{open ? 'メニューを閉じる' : 'メニューを開く'}</span>
               <MenuAlt3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -55,20 +55,20 @@ const Header = () => {
               enter="transition duration-200 ease-out"
               enterFrom="scale-95 opacity-0"
               enterTo="scale-100 opacity-100"
-              leave="transition duration-150 ease-out"
+              leave="transition duration-200 ease-out"
               leaveFrom="scale-100 opacity-100"
               leaveTo="scale-95 opacity-0"
               as={Fragment}
             >
-              <Popover.Panel className="absolute top-14 right-4 space-y-3 rounded-lg bg-white p-5 shadow-lg ring-1 ring-black ring-opacity-5">
+              <Popover.Panel className="absolute top-14 right-4 space-y-3 rounded bg-white px-5 py-2 shadow-lg ring-1 ring-black ring-opacity-5">
                 {({ close }) => (
                   <div>
                     {navigation.map(({ name, href }) => (
                       <Link key={name} href={href}>
                         <a
                           className={clsx(
-                            asPath.startsWith(`/${name.toLowerCase()}`) && 'bg-indigo-400/60',
-                            'font-english flex items-center justify-center rounded-3xl px-5 pt-1 pb-1.5 text-base text-black  lg:transition-colors lg:duration-200 lg:hover:bg-indigo-400/60'
+                            asPath.startsWith(`/${name.toLowerCase()}`) && 'text-lg text-indigo-400',
+                            'font-english -ml-2 block p-2 text-black lg:transition-colors lg:duration-200'
                           )}
                           onClick={() => close()}
                         >
