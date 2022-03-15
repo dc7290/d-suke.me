@@ -30,6 +30,6 @@ yarn-error.log*
 .idea/
 .vercel
 .eslintcache
-src/api/$api.ts
+src/utils/$path.ts
 storybook-static/
 tsconfig.tsbuildinfo
