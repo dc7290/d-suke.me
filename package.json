@@ -59,7 +59,7 @@
     "pathpida": "0.18.0",
     "postcss": "8.4.12",
     "postcss-import": "14.0.2",
-    "prettier": "2.6.0",
+    "prettier": "2.6.1",
     "prettier-plugin-tailwindcss": "0.1.8",
     "typescript": "4.6.3"
   },
