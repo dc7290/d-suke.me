@@ -12,8 +12,8 @@ type Props = {
 const Meta = ({ title, description, ogImage, canonical, noindex = false }: Props) => {
   return (
     <NextHeadSeo
-      title={`${title ? `${title} | でぃーすけ.me` : 'でぃーすけ.me'}`}
-      description={description ?? 'でぃーすけの情報をまとめるサイト'}
+      title={`${title ? `${title} | d-suke.me` : 'd-suke.me'}`}
+      description={description ?? 'でぃーすけの情報をまとめたサイト'}
       og={{
         image: ogImage ?? 'https://d-suke.me/og.png',
       }}
