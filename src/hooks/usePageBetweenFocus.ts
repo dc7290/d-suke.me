@@ -6,7 +6,7 @@ const usePageBetweenFocus = () => {
 
   useEffect(() => {
     const handleRouteChange = () => {
-      const firstFocusElement = document.getElementById('')
+      const firstFocusElement = document.getElementById('main')
       firstFocusElement?.focus()
     }
     router.events.on('routeChangeComplete', handleRouteChange)

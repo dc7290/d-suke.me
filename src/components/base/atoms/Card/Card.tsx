@@ -5,7 +5,7 @@ type Props<T extends keyof JSX.IntrinsicElements> = JSX.IntrinsicElements[T] & {
   as?: T
 }
 
-const Card = <T extends keyof JSX.IntrinsicElements>({ as, className, ...props }: Props<T>) => {
+const Card = <T extends keyof JSX.IntrinsicElements = 'div'>({ as, className, ...props }: Props<T>) => {
   return createElement(as ?? 'div', {
     className: clsx(
       className,
