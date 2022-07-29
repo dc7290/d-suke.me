@@ -46,7 +46,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "12.2.3",
     "@types/node": "16.11.46",
-    "@types/react": "17.0.47",
+    "@types/react": "17.0.48",
     "@typescript-eslint/eslint-plugin": "5.30.7",
     "@typescript-eslint/parser": "5.30.7",
     "autoprefixer": "10.4.7",
