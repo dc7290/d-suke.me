@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "12.3.1",
-    "@types/node": "16.11.64",
+    "@types/node": "16.11.65",
     "@types/react": "17.0.50",
     "@typescript-eslint/eslint-plugin": "5.39.0",
     "@typescript-eslint/parser": "5.39.0",
@@ -65,7 +65,7 @@
     "typescript": "4.8.4"
   },
   "volta": {
-    "node": "16.17.1",
+    "node": "16.18.0",
     "yarn": "1.22.19"
   }
 }
